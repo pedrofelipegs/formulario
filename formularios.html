@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário em Java Script</title>
+    <style>
+        .hide{
+            display: none;
+        }
+        .show{
+            display: block;
+        }
+        hr{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form>                                                  
+        <fieldset>
+            <legend>Login</legend>
+            <p>Campo de Nome: 
+                <input type="text" id="texto"></p>
+            <p>Campo de Telefone: 
+                <input type="tel" id="fone"></p>
+            <p>Campo de Email 
+                <input type="email" id="e-mail"></p>
+            <p>Campo de Senha: 
+                <input type="password" id="senha"></p>
+        </fieldset>
+        <fieldset>
+            <legend>Checkbox:</legend>
+                <p>
+                <label for="info">Informática</label>
+                <input type="checkbox" id="info">
+                <p>
+                <label for="adm">Administração</label>
+                <input type="checkbox" id="adm">
+                <p>
+                <label for="enf">Enfermagem</label>
+                <input type="checkbox" id="enf">
+        </fieldset>
+        <fieldset>
+            <legend>Campo de tipo Rádio</legend>
+            <p>
+            <label for="info2">Informática</label>
+            <input type="radio" name="seucurso" id="info2">
+            <p>
+            <label for="adm2">Administração</label>
+            <input type="radio" name="seucurso" id="adm2">
+            <p>
+            <label for="enf2">Enfermagem</label>
+            <input type="radio" name="seucurso" id="enf2">
+        </fieldset>
+        <fieldset>
+            <legend>Campo Oculto</legend>
+            <input type="hidden" name="oculto" id="oculto" value="9">
+        </fieldset>
+        <fieldset>
+            <legend>Campo do Tipo Number</legend>
+            <input type="number" name="num" id="num">
+        </fieldset>
+        <fieldset>
+            <legend>Campo de Data</legend>
+            <input type="date" name="data" id="data">
+        </fieldset>
+        <fieldset>
+            <legend>Campo de Hora</legend>
+            <input type="time" name="hora" id="hora">
+        </fieldset>
+        <fieldset>
+            <legend>Faixa de Valor (Hange/Range)</legend>
+            <input type="range" id="range" min="10" max="100">
+        </fieldset>
+
+        <fieldset>
+            <legend><label for="PriFaixa">1º Faixa</label></legend>
+            <select name="PriFaixa" id="PriFaixa">
+                <option value="0">Preta</option>
+                <option value="1">Marrom</option>
+                <option value="2">Vermelho</option>
+                <option value="3">Laranja</option>
+            </select>
+        </fieldset>
+
+        <p><button type="reset">Limpar</button></p>
+        <p><button type="button" onclick="pegarDados()">Botão comum</button></p>
+        <p><button type="submit">Submeter Form</button></p>
+    </form>
+<hr>
+<div class="hide">Resumo</div>
+    <div id="camText"></div>
+    <div id="camTel"></div>
+    <div id="camE-mail"></div>
+    <div id="camSenha"></div>
+    <div id="prifaixa"></div>
+    <div id="campoinfo"></div>
+    <div id="campoadm"></div>
+    <div id="campoenf"></div>
+    <div id="camRadio"></div>
+    <div id="campooculto"></div>
+    <div id="camponum"></div>
+    <div id="campodata"></div>
+    <div id="campohora"></div>
+    <div id="camporange"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
